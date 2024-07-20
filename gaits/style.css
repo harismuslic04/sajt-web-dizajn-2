@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 100%;
+  position: relative;
+  top: 2rem;
+}
+.main ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  left: 21rem;
+  top: 0.8rem;
+  color: black;
+}
+.main ul li {
+  cursor: pointer;
+}
+.main ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header h1 {
+  position: relative;
+  left: 4rem;
+  top: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+.header h3 {
+  position: relative;
+  left: 9rem;
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+.img {
+  width: 80%;
+  height: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 8rem;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+}
+.types {
+  position: relative;
+  top: 13rem;
+  left: 12rem;
+  width: 70%;
+  font-size: 1.5rem;
+}
+.types h1 {
+  color: rgb(19, 43, 88);
+}
+.types p {
+  position: relative;
+  top: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+  color: rgb(82, 81, 78);
+}
+#drugi {
+  font-size: 1.2rem;
+}
+.img2 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.img2 img {
+  width: 100%;
+}
+.img3 {
+  width: 90%;
+  position: relative;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.img3 img {
+  width: 100%;
+  border-radius: 3%;
+  height: 35rem;
+}
+.video {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+#treci {
+  position: relative;
+  left: 22rem;
+  width: 15rem;
+  bottom: 1rem;
+}
+.img4 {
+  width: 90%;
+  position: relative;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.img4 img {
+  width: 100%;
+  border-radius: 3%;
+  height: 35rem;
+}
+.video2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+.video2 iframe {
+  width: 100%;
+  height: 100%;
+}

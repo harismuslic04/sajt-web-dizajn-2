@@ -22,9 +22,15 @@ header {
   left: 21rem;
   top: 0.8rem;
   color: white;
+  text-decoration: none;
 }
 .main ul li {
   cursor: pointer;
+  text-decoration: none;
+}
+.main ul li a {
+  text-decoration: none;
+  color: white;
 }
 .main h1 {
   position: relative;
