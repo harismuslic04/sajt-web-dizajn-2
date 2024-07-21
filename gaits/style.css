@@ -122,6 +122,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .img4 img {
   width: 100%;
@@ -138,4 +139,21 @@ header {
 .video2 iframe {
   width: 100%;
   height: 100%;
+  margin-bottom: 5rem;
+}
+#ikonica {
+  position: fixed;
+  left: 80rem;
+  font-size: 2rem;
+  top: 35rem;
+  cursor: pointer;
+}
+#google_translate_element {
+  position: relative;
+  left: 3rem;
+}
+#google_translate_element select {
+  background-color: transparent;
+
+  cursor: pointer;
 }

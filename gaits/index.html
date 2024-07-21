@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script src="app.js" defer></script>
   </head>
   <body>
     <div class="main">
+      <i class="fa fa-angle-double-up" aria-hidden="true" id="ikonica"></i>
       <header class="header">
         <h3>Horses of</h3>
         <h1>Iceland</h1>
@@ -18,6 +24,8 @@
           <li>Gaits</li>
           <li>History</li>
           <li>Contact</li>
+          <li>Login</li>
+          <li><div id="google_translate_element"></div></li>
         </ul>
       </header>
       <div class="img">
@@ -98,5 +106,16 @@
         </div>
       </div>
     </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+      googleTranslateInit();
+    </script>
   </body>
 </html>
