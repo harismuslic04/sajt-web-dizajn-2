@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h3>Horses of</h3>
+        <h1>Iceland</h1>
+        <ul>
+          <li><a href="/home page/">Home</a></li>
+          <li>Breed</li>
+          <li>
+            <a href="/gaits/index.html">Gaits</a>
+          </li>
+          <li>History</li>
+          <li>Contact</li>
+          <li><a href="/login/">Login</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input
+            class="input1"
+            type="text"
+            placeholder="Username"
+            id="username"
+            required
+            style="background-color: transparent"
+          />
+          <span class="floating-label">Username</span>
+          <div id="usernameValidationMessage"></div>
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="input-box">
+          <input
+            class="input2"
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <span class="floating-label">Password</span>
+          <div id="passwordValidationMessage"></div>
+          <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+        </div>
+        <button id="btn" type="submit" class="btn">Login</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
