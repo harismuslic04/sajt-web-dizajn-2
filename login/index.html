@@ -8,7 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+    <script
+      type="text/javascript"
+      src="../../node_modules/jssha/dist/sha.js"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -42,7 +46,7 @@
           />
           <span class="floating-label">Username</span>
           <div id="usernameValidationMessage"></div>
-          <i class="fa fa-user" aria-hidden="true"></i>
+          <i class="fa fa-user" id="ikona1"></i>
         </div>
         <div class="input-box">
           <input
@@ -54,7 +58,7 @@
           />
           <span class="floating-label">Password</span>
           <div id="passwordValidationMessage"></div>
-          <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+          <i class="fa fa-unlock-alt" aria-hidden="true" id="ikona2"></i>
         </div>
         <button id="btn" type="submit" class="btn">Login</button>
       </form>

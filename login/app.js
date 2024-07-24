@@ -50,8 +50,12 @@ const btn = document.getElementById("btn");
 
 btn.addEventListener("click", (e) => {
   const user = users.find((user) => user.username === usernameValue);
+  e.preventDefault();
   if (!user) {
-    e.preventDefault();
+    let ikona = document.getElementById("ikona1");
+    ikona.style.position = "relative";
+    ikona.style.top = "-4.1rem";
+    // e.preventDefault();
     usernameValidationMessageDiv.innerText = "";
     const newh4 = document.createElement("h4");
     newh4.style.color = "red";
@@ -62,8 +66,11 @@ btn.addEventListener("click", (e) => {
     newh4.style.top = "-1rem";
     newh4.innerText = `This username doesn't exists`;
     usernameValidationMessageDiv.appendChild(newh4);
-  } else if (hash(passwordValue) !== user.password) {
-    e.preventDefault();
+  } else if (hash(passwordValue) != user.password) {
+    // e.preventDefault();
+    let ikona2 = document.getElementById("ikona2");
+    ikona2.style.position = "relative";
+    ikona2.style.top = "-4.1rem";
     console.log(hash(passwordValue));
     usernameValidationMessageDiv.innerText = "";
     passwordValidationMessageDiv.innerText = "";
@@ -72,12 +79,15 @@ btn.addEventListener("click", (e) => {
     newh4.style.fontSize = "16px";
     newh4.style.textAlign = "start";
     newh4.style.marginTop = "0px";
+    newh4.style.position = "relative";
+    newh4.style.top = "-1rem";
     newh4.innerText = `Invalid password`;
+
     passwordValidationMessageDiv.appendChild(newh4);
   } else {
     passwordValidationMessageDiv.innerText = "";
     usernameValidationMessageDiv.innerText = "";
-    localStorage.setItem("loggedInUser", usernameValue);
+    sessionStorage.setItem("loggedInUser", usernameValue);
     document.location.href = "../home page/index.html";
   }
 });
