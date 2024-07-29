@@ -253,6 +253,7 @@ header {
   grid-auto-columns: calc(100% / 3);
   gap: 1px;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 .carousel .card {
   list-style: none;
@@ -281,13 +282,13 @@ header {
   font-size: 2rem;
   position: relative;
   left: 5rem;
-  bottom: 16rem;
+  bottom: 18rem;
   cursor: pointer;
 }
 #right {
   font-size: 2rem;
   position: relative;
   left: 77rem;
-  bottom: 16rem;
+  bottom: 18rem;
   cursor: pointer;
 }

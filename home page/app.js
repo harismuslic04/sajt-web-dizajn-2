@@ -1,5 +1,27 @@
 const remove = document.getElementById("loginremove");
+const carousel = document.querySelector(".carousel");
+const wrapper = document.querySelector(".wrapper");
+const arrowsBtns = document.querySelectorAll("body i");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+let isDraggins = false,
+  timeoutId;
+var touch;
+var counter = 3000;
+arrowsBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    touch = true;
+    clearInterval(autoplay);
+    console.log(touch);
+    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+  });
+});
 
+const autoplay = () => {
+  if (window.innerWidth < 800) return;
+  carousel.scrollLeft += firstCardWidth;
+};
+if (touch == null) setInterval(autoplay, counter);
+console.log(touch);
 function updateNavigation() {
   if (sessionStorage.getItem("loggedInUser")) {
     remove.style.display = "none";
@@ -21,7 +43,7 @@ async function getData() {
     "https://66a26e5b967c89168f20125b.mockapi.io/api/horse2/horses"
   );
   const data = await response.json();
-  // console.log("haris");
+  console.log(data);
   let data1 = data[0];
   console.log(data1.results[0].img);
   let slike = document.querySelectorAll("#slika");
@@ -29,9 +51,10 @@ async function getData() {
   console.log(boja);
   console.log(slike[0]);
   console.log(data.length);
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 7; i++) {
     slike[i].src = data1.results[i].img;
     boja[i].textContent = data1.results[i].color;
   }
+  console.log(slike);
 }
 getData();
