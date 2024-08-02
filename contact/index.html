@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h3>Horses of</h3>
+        <h1>Iceland</h1>
+        <ul>
+          <li><a href="/home page/">Home</a></li>
+          <li>Breeding</li>
+          <li>
+            <a href="/gaits/index.html">Gaits</a>
+          </li>
+          <li>History</li>
+          <li>Contact</li>
+          <li><a href="/login/">Login</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <h1>CONTACT US</h1>
+        <h2>Send us a message</h2>
+        <form action="">
+          <div class="input-container">
+            <input
+              class="fullname"
+              id="fullName"
+              type="text"
+              placeholder="Full name"
+              required
+            />
+            <span class="floating-label">Full name</span>
+          </div>
+          <div class="error" id="fullNameError"></div>
+          <div class="input-container">
+            <input
+              class="fullname"
+              id="email"
+              type="text"
+              placeholder="Your email"
+              required
+            />
+            <span class="floating-label">Your email</span>
+          </div>
+          <div class="error" id="emailError"></div>
+          <div class="input-container">
+            <textarea
+              placeholder="Message"
+              class="inputText"
+              id="message"
+              required
+            ></textarea>
+            <span class="floating-label1">Message</span>
+            <div class="error2" id="messageError"></div>
+          </div>
+        </form>
+        <button class="btn" id="btn">Submit</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="adresa">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <h3>Bjargargata 1, 102 Reykjavik</h3>
+      </div>
+      <div class="adresa">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h3>Tel: +354 5114000</h3>
+      </div>
+      <div class="adresa">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <h3>icelandichorses@gmail.com</h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

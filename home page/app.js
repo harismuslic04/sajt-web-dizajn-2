@@ -5,23 +5,31 @@ const arrowsBtns = document.querySelectorAll("body i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 let isDraggins = false,
   timeoutId;
-var touch;
-var counter = 3000;
-arrowsBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    touch = true;
-    clearInterval(autoplay);
-    console.log(touch);
-    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
-  });
-});
+let counter = 3000;
+let autoplayInterval;
 
 const autoplay = () => {
   if (window.innerWidth < 800) return;
   carousel.scrollLeft += firstCardWidth;
 };
-if (touch == null) setInterval(autoplay, counter);
-console.log(touch);
+
+const startAutoplay = () => {
+  autoplayInterval = setInterval(autoplay, counter);
+};
+
+const stopAutoplay = () => {
+  clearInterval(autoplayInterval);
+};
+
+arrowsBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    stopAutoplay();
+    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+  });
+});
+
+// Pokreni autoplay interval
+startAutoplay();
 function updateNavigation() {
   if (sessionStorage.getItem("loggedInUser")) {
     remove.style.display = "none";

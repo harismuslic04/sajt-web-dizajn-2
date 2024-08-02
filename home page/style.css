@@ -168,6 +168,7 @@ header {
   cursor: pointer;
   font-weight: 600;
 }
+
 #read2:hover {
   background-color: #666363;
   border: #212529;
@@ -291,4 +292,9 @@ header {
   left: 77rem;
   bottom: 18rem;
   cursor: pointer;
+}
+#read2 a {
+  text-decoration: none;
+  color: #212529;
+  color: inherit;
 }
