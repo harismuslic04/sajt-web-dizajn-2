@@ -3,6 +3,7 @@ const carousel = document.querySelector(".carousel");
 const wrapper = document.querySelector(".wrapper");
 const arrowsBtns = document.querySelectorAll("body i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const welcome = document.getElementById("welcome");
 let isDraggins = false,
   timeoutId;
 let counter = 3000;
@@ -10,7 +11,12 @@ let autoplayInterval;
 
 const autoplay = () => {
   if (window.innerWidth < 800) return;
-  carousel.scrollLeft += firstCardWidth;
+  else if (
+    window.innerHeight + Math.round(window.scrollY) + 200 >=
+    document.body.offsetHeight
+  ) {
+    carousel.scrollLeft += firstCardWidth;
+  }
 };
 
 const startAutoplay = () => {
@@ -66,3 +72,23 @@ async function getData() {
   console.log(slike);
 }
 getData();
+let mysBtn = document.getElementById("ikonica");
+
+window.addEventListener("scroll", function () {
+  if (
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
+  ) {
+    mysBtn.style.display = "block";
+  } else {
+    mysBtn.style.display = "none";
+  }
+});
+
+mysBtn.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+  transform;
+};
