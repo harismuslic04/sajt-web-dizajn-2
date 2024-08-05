@@ -86,6 +86,16 @@
         <h3>icelandichorses@gmail.com</h3>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+      googleTranslateInit();
+    </script>
   </body>
 </html>

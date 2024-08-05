@@ -201,3 +201,18 @@ input:not(:focus):valid ~ .floating-label {
   width: 20rem;
   bottom: 2.6rem;
 }
+#google_translate_element {
+  width: 30rem;
+
+  height: 30rem;
+  background-color: red;
+  position: relative;
+  left: 2rem;
+  top: 100rem;
+  z-index: 1;
+}
+#google_translate_element select {
+  background-color: transparent;
+
+  cursor: pointer;
+}

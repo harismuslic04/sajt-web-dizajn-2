@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <script src="app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -40,9 +40,9 @@
         <h3>Discover with us and feel the nature</h3>
       </div>
     </div>
-    <div class="under">
+    <div id="under" class="under">
       <div id="welcome" class="welcome">
-        <h1>Welcome</h1>
+        <h1 id="welcomeh1">Welcome</h1>
         <p>
           Discover more about these warm yet hardy creatures, what makes them so
           remarkable, and why travelers flock from across the world to visit
@@ -140,6 +140,15 @@
     <h1 class="colors">MANY DIFFERENT COLORS</h1>
     <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
     <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>
-    <script src="app.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+    <script>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+      googleTranslateInit();
+    </script>
   </body>
 </html>

@@ -4,6 +4,14 @@ const wrapper = document.querySelector(".wrapper");
 const arrowsBtns = document.querySelectorAll("body i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const welcome = document.getElementById("welcome");
+const username = sessionStorage.getItem("loggedInUser");
+const naslov = document.getElementById("welcomeh1");
+if (username) {
+  var slovo = username[0].toUpperCase();
+}
+const under = document.getElementById("under");
+console.log(sessionStorage.getItem("loggedInUser"));
+// console.log(slovo);
 let isDraggins = false,
   timeoutId;
 let counter = 3000;
@@ -37,10 +45,17 @@ arrowsBtns.forEach((btn) => {
 // Pokreni autoplay interval
 startAutoplay();
 function updateNavigation() {
-  if (sessionStorage.getItem("loggedInUser")) {
+  if (isNaN(sessionStorage.getItem("loggedInUser"))) {
     remove.style.display = "none";
+    welcome.style.display = "inline-block";
+    naslov.textContent = "Welcome " + slovo + username.slice(1);
+    naslov.style.width = "30rem";
+    under.style.marginTop = "14rem";
   } else {
     remove.style.display = "inline-block";
+    welcome.style.height = "0rem";
+    welcome.style.display = "none";
+    under.style.marginTop = "0";
   }
 }
 
