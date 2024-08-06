@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 100%;
+  position: relative;
+  top: 2rem;
+  z-index: 1;
+}
+.main ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  left: 21rem;
+  top: 0.8rem;
+  color: black;
+}
+.main ul li {
+  cursor: pointer;
+}
+.main ul li a {
+  text-decoration: none;
+  color: black;
+}
+header h1 {
+  position: relative;
+  left: 4rem;
+  top: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+header h3 a {
+  text-decoration: none;
+  color: black;
+}
+header h3 {
+  position: relative;
+  left: 9rem;
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+}
+.img {
+  width: 70%;
+  margin: auto;
+  height: 35rem;
+  position: relative;
+  top: 8rem;
+}
+.img img {
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+}
+#breed {
+  text-decoration-line: overline;
+}
+.under {
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+  top: 10rem;
+  display: flex;
+  height: 50rem;
+}
+
+.under h1 {
+  font-weight: 1000;
+  position: absolute;
+  left: 13rem;
+  top: 2rem;
+  font-family: Neausa, Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  font-weight: 800;
+
+  width: 30rem;
+}
+.under p {
+  position: absolute;
+  top: 7rem;
+  font-size: 1.3rem;
+  width: 60%;
+  text-align: start;
+  left: 13rem;
+  line-height: 2rem;
+  color: rgb(82, 81, 78);
+}
+#img2 {
+  width: 60%;
+  height: 35rem;
+  border-radius: 30px;
+  margin: auto;
+  position: relative;
+  top: 40rem;
+}
+.under2 {
+  width: 100%;
+  position: relative;
+  top: 48rem;
+}
+.under2 h1 {
+  font-family: Neausa, Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  font-weight: 800;
+
+  width: 30rem;
+  position: relative;
+  left: 13rem;
+}
+.under2 p {
+  position: relative;
+  top: 1rem;
+  font-size: 1.3rem;
+  width: 60%;
+  text-align: start;
+  left: 13rem;
+  line-height: 2rem;
+  color: rgb(82, 81, 78);
+  margin-bottom: 3rem;
+}
+#img3 {
+  width: 60%;
+  height: 35rem;
+  border-radius: 30px;
+  left: 17rem;
+  position: relative;
+}
+#h13 {
+  width: 40rem;
+  margin-top: 3rem;
+}
+#pp {
+  padding-bottom: 5rem;
+}
+#aa {
+  color: rgb(82, 81, 78);
+}
