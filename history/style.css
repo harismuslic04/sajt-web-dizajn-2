@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 100%;
+  position: relative;
+  top: 2rem;
+  z-index: 1;
+}
+.main ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  left: 21rem;
+  top: 0.8rem;
+  color: white;
+}
+.main ul li {
+  cursor: pointer;
+}
+.main ul li a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  position: relative;
+  left: 4rem;
+  top: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+header h3 a {
+  text-decoration: none;
+  color: white;
+}
+header h3 {
+  position: relative;
+  left: 9rem;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+.img {
+  position: absolute;
+  z-index: 0;
+  bottom: 0rem;
+  width: 100%;
+}
+.h11 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 17rem;
+  width: 50rem;
+  top: 15rem;
+  cursor: default;
+}
+.under1 {
+  position: relative;
+  top: 39rem;
+  display: flex;
+  width: 100%;
+  padding-top: 10rem;
+  /* background: linear-gradient(45deg, rgb(45, 122, 45), rgb(171, 233, 171)); */
+}
+.img2 img {
+  width: 40rem;
+  position: relative;
+  left: 4rem;
+  border-radius: 20px;
+}
+.under1 p {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+  color: rgb(82, 81, 78);
+  position: relative;
+  left: 7rem;
+  bottom: 2rem;
+}
+.under2 {
+  position: relative;
+  top: 39rem;
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+  /* background: linear-gradient(45deg, rgb(45, 122, 45), rgb(171, 233, 171)); */
+}
+.img3 img {
+  width: 40rem;
+  position: relative;
+  left: 42rem;
+  border-radius: 20px;
+}
+.under2 p {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+  color: rgb(82, 81, 78);
+  position: relative;
+  right: 36rem;
+  bottom: 2rem;
+}
+.under3 {
+  position: relative;
+  top: 39rem;
+  display: flex;
+  width: 100%;
+
+  /* background: linear-gradient(45deg, rgb(45, 122, 45), rgb(171, 233, 171)); */
+}
+.img4 img {
+  width: 40rem;
+  position: relative;
+  left: 4rem;
+  border-radius: 20px;
+}
+.under3 p {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+  color: rgb(82, 81, 78);
+  position: relative;
+  left: 7rem;
+  bottom: 0rem;
+}
