@@ -154,4 +154,5 @@ header h1 a {
   top: 35rem;
   cursor: pointer;
   z-index: 1;
+  display: none;
 }

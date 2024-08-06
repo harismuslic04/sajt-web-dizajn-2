@@ -148,6 +148,7 @@ header {
   font-size: 2rem;
   top: 35rem;
   cursor: pointer;
+  display: none;
 }
 #google_translate_element {
   position: absolute;
