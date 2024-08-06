@@ -216,3 +216,11 @@ input:not(:focus):valid ~ .floating-label {
 
   cursor: pointer;
 }
+header h3 a {
+  text-decoration: none;
+  color: white;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
