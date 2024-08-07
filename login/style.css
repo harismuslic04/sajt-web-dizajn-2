@@ -20,6 +20,14 @@ header {
   height: 5rem;
   width: 100%;
 }
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+header h3 a {
+  text-decoration: none;
+  color: white;
+}
 .main ul {
   display: flex;
   list-style: none;
@@ -41,7 +49,7 @@ header {
 }
 .main h1 {
   position: relative;
-  left: 3.4rem;
+  left: 4.1rem;
   top: 1.2rem;
   color: white;
   cursor: pointer;

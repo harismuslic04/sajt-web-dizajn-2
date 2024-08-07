@@ -310,6 +310,11 @@ header h3 a {
   color: #212529;
   color: inherit;
 }
+#read3 a {
+  text-decoration: none;
+  color: #212529;
+  color: inherit;
+}
 #ikonica {
   position: fixed;
   left: 81rem;
