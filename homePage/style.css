@@ -359,3 +359,6 @@ header h3 a {
 
   cursor: pointer;
 }
+#ikonica {
+  display: none;
+}

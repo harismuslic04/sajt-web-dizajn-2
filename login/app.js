@@ -20,6 +20,7 @@ const hash = (text) => {
   const hash = hashObj.getHash("HEX");
   return hash;
 };
+console.log(hash("aladin1"));
 
 const usernameEl = document.getElementById("username");
 let usernameValue = "";
@@ -88,6 +89,6 @@ btn.addEventListener("click", (e) => {
     passwordValidationMessageDiv.innerText = "";
     usernameValidationMessageDiv.innerText = "";
     sessionStorage.setItem("loggedInUser", usernameValue);
-    document.location.href = "../home page/index.html";
+    document.location.href = "../homePage/index.html";
   }
 });
