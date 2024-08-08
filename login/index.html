@@ -13,6 +13,10 @@
       type="text/javascript"
       src="../../node_modules/jssha/dist/sha.js"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,20 +25,30 @@
         <h3><a href="/homePage/">Horses of</a></h3>
         <h1><a href="/homePage/">Iceland</a></h1>
         <ul>
-          <li><a href="/homePage/">Home</a></li>
-          <li><a href="/breeding/">Breeding</a></li>
           <li>
-            <a href="/gaits/index.html">Gaits</a>
+            <a href="/homePage/" data-en="Home" data-sr="Pocetna">Home</a>
           </li>
-          <li><a href="/history/">History</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/login/">Login</a></li>
+          <li>
+            <a href="/breeding/" data-en="Breeding" data-sr="Uzgajanje"
+              >Breeding</a
+            >
+          </li>
+          <li>
+            <a href="/gaits/index.html" data-en="Gaits" data-sr="Hod">Gaits</a>
+          </li>
+          <li>
+            <a href="/history/" data-en="History" data-sr="Istorija">History</a>
+          </li>
+          <li>
+            <a href="/contact/" data-en="Contact" data-sr="Kontakt">Contact</a>
+          </li>
+          <li><a href="/login/" data-en="Login" data-sr="Prijava">Login</a></li>
         </ul>
       </header>
     </div>
     <div class="wrapper">
       <form action="">
-        <h1>Login</h1>
+        <h1 data-en="Login" data-sr="Prijava">Login</h1>
         <div class="input-box">
           <input
             class="input1"
@@ -44,7 +58,12 @@
             required
             style="background-color: transparent"
           />
-          <span class="floating-label">Username</span>
+          <span
+            class="floating-label"
+            data-en="Username"
+            data-sr="Korisnicko ime"
+            >Username</span
+          >
           <div id="usernameValidationMessage"></div>
           <i class="fa fa-user" id="ikona1"></i>
         </div>
@@ -56,12 +75,32 @@
             id="password"
             required
           />
-          <span class="floating-label">Password</span>
+          <span class="floating-label" data-en="Password" data-sr="Sifra"
+            >Password</span
+          >
           <div id="passwordValidationMessage"></div>
           <i class="fa fa-unlock-alt" aria-hidden="true" id="ikona2"></i>
         </div>
-        <button id="btn" type="submit" class="btn">Login</button>
+        <button
+          id="btn"
+          type="submit"
+          class="btn"
+          data-en="Login"
+          data-sr="Prijava"
+        >
+          Login
+        </button>
       </form>
+    </div>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span style="margin-bottom: 20px" class="on">SR</span>
+      <span class="off">EN</span>
     </div>
     <script src="app.js"></script>
   </body>

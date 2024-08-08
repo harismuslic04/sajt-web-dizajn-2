@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main">
@@ -18,12 +22,26 @@
         <h3><a href="/homePage/">Horses of</a></h3>
         <h1><a href="/homePage/">Iceland</a></h1>
         <ul>
-          <li><a href="/homePage/index.html">Home</a></li>
-          <li id="breed">Breeding</li>
-          <li><a href="/gaits/">Gaits</a></li>
-          <li><a href="/history/">History</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/login/" id="loginremove">Login</a></li>
+          <li>
+            <a data-en="Home" data-sr="Pocetna" href="/homePage/">Home</a>
+          </li>
+          <li>
+            <a href="/breeding/" data-en="Breeding" data-sr="Uzgajanje"
+              >Breeding</a
+            >
+          </li>
+          <li>
+            <a href="/gaits/index.html" data-en="Gaits" data-sr="Hod">Gaits</a>
+          </li>
+          <li>
+            <a href="/history/" data-en="History" data-sr="Istorija">History</a>
+          </li>
+          <li>Contact</li>
+          <li>
+            <a href="/login/" id="loginremove" data-en="Login" data-sr="Prijava"
+              >Login</a
+            >
+          </li>
         </ul>
       </header>
       <div class="img">
@@ -33,8 +51,40 @@
         />
       </div>
       <div class="under">
-        <h1>ELEGANT AND POWERFUL</h1>
-        <p>
+        <h1 data-en="ELEGANT AND POWERFUL" data-sr="ELEGANTNI I MOCNI">
+          ELEGANT AND POWERFUL
+        </h1>
+        <p
+          data-en="The Icelandic horse has been bred selectively for a long time, which
+        has improved the breed, especially over the last few decades. The
+        official breeding goal of Icelandic horses is to produce a healthy,
+        fertile, and durable riding horse, a robust and yet elegant and
+        versatile horse with five excellent gaits. The conformation should
+        offer optimal natural balance, and the movements should be supple,
+        high and ground covering in all gaits, giving an elegant and powerful
+        image. <br /><br />
+        Horses are usually started under saddle at three-and-a-half years old
+        in the fall and given a break for one to two months before training
+        starts again in December. Then, they are prepared for breeding
+        evaluation shows in the spring, which start in May. In Iceland, horses
+        are evaluated from four years of age. All breeding evaluations are
+        registered in WorldFengur . <br /><br />
+        When a horse is evaluated, a group of breeding judges (usually three)
+        assesses the horse’s conformation from the ground, giving marks for
+        the different traits, and then watches the horse in action on a
+        straight track, to evaluate the horse's riding abilities. Apart from
+        the spring shows, breeding evaluations are organised in July during
+        shows often called midsummer shows or during Landsmót every other
+        year. Late summer shows are also scheduled in August. At the World
+        Championships every other year, opposite Landsmót, horses with the
+        best breeding scores from all FEIF countries are re-evaluated and
+        rewarded."
+          data-sr="Islandski konj je selektivno uzgajan duže vreme, što je poboljšalo rasu, posebno u poslednjim decenijama. Zvanični cilj uzgoja islandskih konja je da se proizvede zdrav, plodan i izdržljiv konj za jahanje, robustan, a ipak elegantan i svestran konj sa pet odličnih hodova. Konformacija bi trebalo da pruži optimalnu prirodnu ravnotežu, a pokreti treba da budu gipki, visoki i da pokrivaju puno tla u svim hodovima, dajući elegantan i snažan izgled.
+
+          Konji se obično počinju obučavati za jahanje sa tri i po godine, u jesen, a zatim se prave pauze od jednog do dva meseca pre nego što obuka ponovo počne u decembru. Nakon toga se pripremaju za uzgojne evaluacije koje počinju u maju. Na Islandu se konji ocenjuju od četvrte godine starosti. Sve uzgojne evaluacije su registrovane u WorldFengur.
+          
+          Kada se konj ocenjuje, grupa uzgojnih sudija (obično tri) procenjuje konformaciju konja sa zemlje, dajući ocene za različite osobine, a zatim posmatraju konja u akciji na pravoj stazi kako bi procenili jahačke sposobnosti konja. Osim prolećnih izložbi, uzgojne evaluacije se organizuju u julu tokom izložbi koje se često nazivaju letnje izložbe ili tokom Landsmóta svake druge godine. Kasne letnje izložbe su takođe planirane u avgustu. Na Svetskom prvenstvu, koje se održava svake druge godine, nasuprot Landsmóta, konji sa najboljim ocenama za uzgoj iz svih FEIF zemalja ponovo se ocenjuju i nagrađuju."
+        >
           The Icelandic horse has been bred selectively for a long time, which
           has improved the breed, especially over the last few decades. The
           official breeding goal of Icelandic horses is to produce a healthy,
@@ -67,8 +117,16 @@
         />
       </div>
       <div class="under2">
-        <h1>Size</h1>
-        <p>
+        <h1 data-en="Size" data-sr="Velicina">Size</h1>
+        <p
+          data-en="The size of Icelandic horses can vary considerably, from just about
+        130 cm on highest point of withers, to over 150 cm. The average size
+        of horses shown in breeding evaluation is now at 142 cm to the withers
+        which is considerably taller than 30 years ago. The reason for horses
+        growing taller is due partly to better feed, but also selective
+        breeding."
+          data-sr="Velicina islandskih konja može znatno da varira, od oko 130 cm na najvišoj tački grebena, do preko 150 cm. Prosečna visina konja prikazanih na uzgojnim evaluacijama sada iznosi 142 cm do grebena, što je znatno više nego pre 30 godina. Razlog za rast visine konja delimično je bolja ishrana, ali i selektivno uzgajanje."
+        >
           The size of Icelandic horses can vary considerably, from just about
           130 cm on highest point of withers, to over 150 cm. The average size
           of horses shown in breeding evaluation is now at 142 cm to the withers
@@ -76,8 +134,23 @@
           growing taller is due partly to better feed, but also selective
           breeding.
         </p>
-        <h1>Coroulful characters</h1>
-        <p>
+        <h1 data-en="Coroulful characters" data-sr="Šareni karakteri">
+          Coroulful characters
+        </h1>
+        <p
+          data-en=" The official breeding goal is to preserve all possible varieties of
+        coat colour within the breed. It still should be kept in mind that
+        some colour variations are correlated with genetic or physical defects
+        that should be avoided. <br /><br />
+        The horse’s character should enable it to be used for different roles.
+        It should be calm, friendly and cooperative, as well as courageous and
+        reliable. The breeding goal encompasses everything from sensitive and
+        willing horses to calmer types, but always with an emphasis on
+        willingness to perform."
+          data-sr="Zvanični cilj uzgoja je očuvanje svih mogućih varijacija boje dlake unutar rase. I dalje treba imati na umu da su neke varijacije boje povezane sa genetskim ili fizičkim defectima koje treba izbegavati.
+
+          Karakter konja treba da omogući njegovu upotrebu za različite uloge. Treba da bude smiren, prijateljski nastrojen i saradljiv, kao i hrabar i pouzdan. Cilj uzgoja obuhvata sve, od osetljivih i voljnih konja do mirnijih tipova, ali uvek sa naglaskom na spremnost za rad."
+        >
           The official breeding goal is to preserve all possible varieties of
           coat colour within the breed. It still should be kept in mind that
           some colour variations are correlated with genetic or physical defects
@@ -93,8 +166,37 @@
           src="https://horseexport.is/wp-content/uploads/2021/05/GIGJAR.jpg"
           alt=""
         />
-        <h1 id="h13">The true icelandic Gæðingur</h1>
-        <p id="pp">
+        <h1
+          id="h13"
+          data-en="The true icelandic Gæðingur"
+          data-sr="Pravi islandski Gæðingur"
+        >
+          The true icelandic Gæðingur
+        </h1>
+        <p
+          id="pp"
+          data-sr="Konformacija treba da bude funkcionalna i da promoviše zdravlje i izdržljivost konja, gde su sposobnost nošenja, prirodna sposobnost hodanja i kapacitet za kretanje pod jahačem u ravnoteži i ispravnoj funkciji tela od ključne važnosti. Konformacija takođe treba da bude karakterisana lepotom i privlačnim izgledom, sa naglaskom na snazi i mišićavosti. <br /><br />
+          Cilj je da se uzgaja kvalitetan konj sa prirodnom sposobnošću da nosi jahača u ravnoteži, samonoseći i lep kada je jahan, konj koji je agilan, siguran na nogama i sa dobrom izdržljivošću – pravi islandski gæðingur. Glavni cilj u vezi sa sposobnošću hodanja je da hodovi imaju ispravan ritam i funkciju tela, konj se kreće slobodno u ravnomernom ritmu. Hodovi takođe treba da poseduju fleksibilnost, lakoću, duge korake i brzinski kapacitet. Pročitajte više o hodovima <a id='aa' href='/gaits/'>ovde</a>. <br /><br />
+          <a id='aa' href='https://www.feif.org/breeding-dept/documents/'>Kliknite ovde</a> za detaljan opis ciljeva uzgoja i drugih dokumenata."
+          data-en=" The conformation should be functional and promote the health and
+        durability of the horse where carrying ability, natural gaiting
+        ability and the capacity to move under a rider in balance and correct
+        body function are paramount. The conformation should also be
+        characterized by beauty and attractive appearance with an emphasis on
+        strength and muscularity. <br /><br />
+        The aim is to breed a quality gaited horse that has a natural ability
+        to carry a rider in balance, self-carriage and is beautiful when
+        ridden, a horse that is agile, sure-footed and with good stamina – a
+        true Icelandic gæðingur. The main goal with regards to the gaiting
+        ability is that the gaits have correct beat and body function, the
+        horse is moving freely in an even rhythm. The gaits should moreover
+        possess suppleness, lightness, long strides and speed capacity. Read
+        more about the gaits <a id='aa' href='/gaits/'>here</a>. <br /><br />
+        <a id='aa' href='https://www.feif.org/breeding-dept/documents/'
+          >Click here</a
+        >
+        for a detailed description of the breeding goals and other documents."
+        >
           The conformation should be functional and promote the health and
           durability of the horse where carrying ability, natural gaiting
           ability and the capacity to move under a rider in balance and correct
@@ -115,6 +217,16 @@
           for a detailed description of the breeding goals and other documents.
         </p>
       </div>
+    </div>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span style="margin-bottom: 20px" class="on">SR</span>
+      <span class="off">EN</span>
     </div>
   </body>
 </html>

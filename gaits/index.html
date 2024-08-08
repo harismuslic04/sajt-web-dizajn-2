@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -19,12 +22,28 @@
         <h3><a href="/homePage/">Horses of</a></h3>
         <h1><a href="/homePage/">Iceland</a></h1>
         <ul>
-          <li><a href="/homePage/index.html">Home</a></li>
-          <li><a href="/breeding/">Breeding</a></li>
-          <li id="gaits">Gaits</li>
-          <li><a href="/history/">History</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a id="loginremove" href="/login/">Login</a></li>
+          <li>
+            <a href="/homePage/index.html" data-en="Home" data-sr="Pocetna"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="/breeding/" data-en="Breeding" data-sr="Uzgajanje"
+              >Breeding</a
+            >
+          </li>
+          <li id="gaits" data-en="Gaits" data-sr="Hod">Gaits</li>
+          <li>
+            <a href="/history/" data-en="History" data-sr="Istorija">History</a>
+          </li>
+          <li>
+            <a href="/contact/" data-en="Contact" data-sr="Kontakt">Contact</a>
+          </li>
+          <li>
+            <a id="loginremove" href="/login/" data-en="Login" data-sr="Prijava"
+              >Login</a
+            >
+          </li>
         </ul>
         <div class="nista"></div>
         <div class="nista1"></div>
@@ -35,8 +54,25 @@
         <img src="./tolt_1.webp" alt="" />
       </div>
       <div class="types">
-        <h1><strong>The five Gaits of the Icelandic horse.</strong></h1>
-        <p>
+        <h1>
+          <strong
+            data-en="The five Gaits of the Icelandic horse."
+            data-sr="Pet hodova islandskog konja."
+            >The five Gaits of the Icelandic horse.</strong
+          >
+        </h1>
+        <p
+          data-en="The Icelandic horse is what is called a gaited breed, they have,
+        unlike other breeds five gaits. Tölt and Flying pace are the gaits who
+        make the Icelandic horse very special and desirable to ride. The
+        horses of Iceland are a so-called gaited horse breed. This means that
+        most Icelandic horses have two extra gaits to offer besides walk, trot
+        and canter/gallop. All horse breeds have these three natural gaits and
+        can perform them without training. The extra gaits that set the
+        Icelandic horse apart from other breeds are called tölt and flying
+        pace."
+          data-sr="Islandski konj pripada takozvanoj rasi konja sa specifičnim hodovima, koja za razliku od drugih rasa ima pet hodova. Tölt i leteći kas su hodovi koji čine islandskog konja vrlo posebnim i poželjnim za jahanje. Konji sa Islanda pripadaju takozvanoj rasi konja sa posebnim hodovima. To znači da većina islandskih konja, pored hoda, kasa i galopa, ima još dva dodatna hoda. Sve rase konja imaju ova tri prirodna hoda i mogu ih izvoditi bez obuke. Dodatni hodovi koji razlikuju islandskog konja od drugih rasa nazivaju se tölt i leteći kas."
+        >
           The Icelandic horse is what is called a gaited breed, they have,
           unlike other breeds five gaits. Tölt and Flying pace are the gaits who
           make the Icelandic horse very special and desirable to ride. The
@@ -48,7 +84,29 @@
           pace.
         </p>
         <h1>Walk,Trot and Gallop</h1>
-        <p id="drugi">
+        <p
+          data-en="The walk is one of the horse’s natural gaits. It is a slow, four-beat,
+        symmetry gait where there are either one or two legs touching the
+        ground. The legs touch the ground longer than they glide in the air.
+        <br /><br />
+        The trot is a natural two-beat gait where the horses move two legs
+        diagonally to each other. This gait is faster than the walk and is
+        often used first when the horses are being trained. This gait is more
+        rough and bouncy than Tölt but it is important to allow the horses to
+        trot since they use this gait to rest, especially on rough terrain and
+        when going uphills.
+        <br /><br />
+        Gallop is a three-beat natural gait where the horse glides a bit in
+        the air. The horses can gallop at a different speed from slow to fast
+        gallop. On the Icelandic horse, the gallop and canter are considered
+        to be one combined gait."
+          data-sr="Hod je jedan od prirodnih hodova konja. To je spor, četvorotaktni, simetrični hod pri kojem jedna ili dve noge dodiruju tlo. Noge dodiruju tlo duže nego što lebde u vazduhu.
+          <br /><br />
+          Kas je prirodan dvotaktni hod pri kojem konj pomera dve noge dijagonalno jedna prema drugoj. Ovaj hod je brži od hoda i često se prvo koristi kada se konji treniraju. Ovaj hod je grublji i skakutaviji od tölt-a, ali je važno omogućiti konjima da kaskaju jer koriste ovaj hod da se odmaraju, posebno na neravnom terenu i pri penjanju uzbrdo.
+          <br /><br />
+          Galop je prirodan trotaktni hod pri kojem konj lebdi malo u vazduhu. Konji mogu galopirati različitim brzinama, od sporog do brzog galopa. Kod islandskog konja, galop i canter se smatraju kombinovanim hodom."
+          id="drugi"
+        >
           The walk is one of the horse’s natural gaits. It is a slow, four-beat,
           symmetry gait where there are either one or two legs touching the
           ground. The legs touch the ground longer than they glide in the air.
@@ -70,7 +128,17 @@
         <div class="img3">
           <img src="./IMG_8922.jpg" alt="" />
         </div>
-        <p id="drugi">
+        <p
+          data-en="Tölt is the four-beat lateral gait, that the breed is best known for.
+        The horse’s hind legs should move well under the body and carry more
+        of the weight than the front end, allowing the front to rise and be
+        free and loose. Tölt is very smooth to ride since there is no
+        suspension between strides, as is the case in trot or canter. Tölt can
+        be ridden very slowly and up to a very fast speed, depending on the
+        horse and its training level."
+          data-sr="Tölt je četvorotaktni lateralni hod po kojem je ova rasa najpoznatija. Zadnje noge konja treba da se dobro pomeraju ispod tela i nose veći deo težine nego prednji deo, što omogućava prednjem delu da se podigne i bude slobodan i opušten. Tölt je veoma udoban za jahanje jer nema faze letenja između koraka, kao što je to slučaj kod kasa ili galopa. Tölt se može jahati vrlo sporo, ali i pri vrlo velikim brzinama, u zavisnosti od konja i nivoa njegove obuke."
+          id="drugi"
+        >
           Tölt is the four-beat lateral gait, that the breed is best known for.
           The horse’s hind legs should move well under the body and carry more
           of the weight than the front end, allowing the front to rise and be
@@ -79,25 +147,54 @@
           be ridden very slowly and up to a very fast speed, depending on the
           horse and its training level.
         </p>
-        <h3 id="treci">Animation of Tölt</h3>
+        <h3
+          data-en="Animation of Tölt"
+          data-sr="
+        Animacija Tölt-a"
+          id="treci"
+        >
+          Animation of Tölt
+        </h3>
         <div class="video">
           <iframe
             src="https://www.youtube.com/embed/5sVUayJZ9Ms"
             frameborder="0"
           ></iframe>
         </div>
-        <h1>Flying pace</h1>
+        <h1
+          data-en="Flying pace"
+          data-sr="Leteci hod
+        "
+        >
+          Flying pace
+        </h1>
         <div class="img4">
           <img src="./fly.jpg" alt="" />
         </div>
-        <p>
+        <p
+          data-en=" Flying pace is often called the fifth gear and is a two-beat lateral
+        gait with suspension. Flying pace is ridden very fast and over short
+        distances. It is sometimes used for racing over 100 to 250 meters. Not
+        all Icelandic horses can pace but those that do are often considered
+        the best of the breed."
+          data-sr="Leteći kas često se naziva petom brzinom i predstavlja dvotaktni lateralni hod sa fazom letenja. Leteći kas se jaše vrlo brzo i na kratkim udaljenostima. Ponekad se koristi za trke na udaljenostima od 100 do 250 metara. Nisu svi islandski konji sposobni za leteći kas, ali oni koji to mogu često se smatraju najboljim predstavnicima rase.
+      "
+        >
           Flying pace is often called the "fifth gear" and is a two-beat lateral
           gait with suspension. Flying pace is ridden very fast and over short
           distances. It is sometimes used for racing over 100 to 250 meters. Not
           all Icelandic horses can pace but those that do are often considered
           the best of the breed.
         </p>
-        <p>
+        <p
+          data-en="  Below is a video showing the five gaits of the Icelandic horse with
+        moments in slow-motion."
+          data-sr="Ispod se nalazi video koji prikazuje pet hodova islandskog konja sa momentima u usporenom snimku.
+
+
+
+      "
+        >
           Below is a video showing the five gaits of the Icelandic horse with
           moments in slow-motion.
         </p>
@@ -109,16 +206,15 @@
         </div>
       </div>
     </div>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
-
-    <script>
-      function googleTranslateInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      }
-      googleTranslateInit();
-    </script>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span style="margin-bottom: 20px" class="on">SR</span>
+      <span class="off">EN</span>
+    </div>
   </body>
 </html>

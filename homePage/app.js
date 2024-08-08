@@ -107,3 +107,53 @@ window.onbeforeunload = () => {
   window.scrollTo(0, 0);
   transform;
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("language-toggle");
+  const elements = document.querySelectorAll("[data-en], [data-sr]");
+
+  const storedLanguage = localStorage.getItem("language");
+  if (storedLanguage) {
+    toggle.checked = storedLanguage === "sr";
+    setLanguage();
+  }
+
+  function setLanguage() {
+    elements.forEach((element) => {
+      if (toggle.checked) {
+        console.log(document.getElementById("hod"));
+        document.getElementById("hod").style.position = "relative";
+        document.getElementById("hod").style.left = "59%";
+        document.getElementById("paragraf1").style.position = "relative";
+        document.getElementById("paragraf1").style.left = "59%";
+        document.getElementById("h3").style.position = "relative";
+        document.getElementById("h3").style.left = "7.2%";
+        document.getElementById("h11").style.position = "relative";
+        document.getElementById("h11").style.left = "9.1%";
+        document.getElementById("read").style.position = "relative";
+
+        document.getElementById("read").style.left = "-69.8rem";
+        document.getElementById("read").style.top = "30rem";
+        console.log(document.getElementById("paragraf1"));
+        element.innerHTML = element.dataset.sr.replace(/&lt;br&gt;/g, "<br>");
+      } else {
+        document.getElementById("hod").style.position = "relative";
+        document.getElementById("hod").style.left = "61.5%";
+        document.getElementById("h11").style.position = "relative";
+        document.getElementById("h11").style.left = "6.8%";
+        document.getElementById("read").style.position = "relative";
+
+        document.getElementById("read").style.left = "-71.3rem";
+        document.getElementById("read").style.top = "28rem";
+        element.innerHTML = element.dataset.en.replace(/&lt;br&gt;/g, "<br>");
+      }
+    });
+
+    // Store language preference in localStorage
+    const languagePreference = toggle.checked ? "sr" : "en";
+    localStorage.setItem("language", languagePreference);
+  }
+
+  // Add event listener to language toggle
+  toggle.addEventListener("change", setLanguage);
+});

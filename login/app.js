@@ -92,3 +92,37 @@ btn.addEventListener("click", (e) => {
     document.location.href = "../homePage/index.html";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("language-toggle");
+  const elements = document.querySelectorAll("[data-en], [data-sr]");
+
+  const storedLanguage = localStorage.getItem("language");
+  if (storedLanguage) {
+    toggle.checked = storedLanguage === "sr";
+    setLanguage();
+  }
+
+  function setLanguage() {
+    elements.forEach((element) => {
+      if (toggle.checked) {
+        document.getElementById("username").placeholder = "Korisnicko ime";
+
+        document.getElementById("password").placeholder = "Sifra";
+        element.innerHTML = element.dataset.sr.replace(/&lt;br&gt;/g, "<br>");
+      } else {
+        document.getElementById("username").placeholder = "Username";
+        document.getElementById("password").placeholder = "Password";
+        element.innerHTML = element.dataset.en.replace(/&lt;br&gt;/g, "<br>");
+      }
+    });
+
+    // Store language preference in localStorage
+    const languagePreference = toggle.checked ? "sr" : "en";
+    localStorage.setItem("language", languagePreference);
+  }
+
+  // Add event listener to language toggle
+  toggle.addEventListener("change", setLanguage);
+});
+g;

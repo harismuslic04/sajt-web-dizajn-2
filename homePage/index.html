@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="app.js" defer></script>
     <title>Document</title>
   </head>
@@ -25,33 +29,69 @@
         <h3><a href="/homePage/">Horses of</a></h3>
         <h1><a href="/homePage/">Iceland</a></h1>
         <ul>
-          <li><a href="/homePage/">Home</a></li>
-          <li><a href="/breeding/">Breeding</a></li>
           <li>
-            <a href="/gaits/index.html">Gaits</a>
+            <a href="/homePage/" data-en="Home" data-sr="Pocetna">Home</a>
           </li>
-          <li><a href="/history/">History</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/login/" id="loginremove">Login</a></li>
+          <li>
+            <a href="/breeding/" data-en="Breeding" data-sr="Uzgajanje"
+              >Breeding</a
+            >
+          </li>
+          <li>
+            <a href="/gaits/index.html" data-en="Gaits" data-sr="Hod">Gaits</a>
+          </li>
+          <li>
+            <a href="/history/" data-en="History" data-sr="Istorija">History</a>
+          </li>
+          <li>
+            <a href="/contact/" data-en="Contact" data-sr="Kontakt">Contact</a>
+          </li>
+          <li>
+            <a href="/login/" id="loginremove" data-en="Login" data-sr="Prijava"
+              >Login</a
+            >
+          </li>
         </ul>
       </header>
       <div class="naslov">
-        <h1>HORSES OF ICELAND</h1>
-        <h3>Discover with us and feel the nature</h3>
+        <h1 data-en="HORSES OF ICELAND" data-sr="KONJI ISLANDA">
+          HORSES OF ICELAND
+        </h1>
+        <h3
+          data-en="Discover with us and feel the nature"
+          data-sr="Otkrijte sa nama i osetite prirodu."
+        >
+          Discover with us and feel the nature
+        </h3>
       </div>
     </div>
     <div id="under" class="under">
       <div id="welcome" class="welcome">
-        <h1 id="welcomeh1">Welcome</h1>
-        <p>
+        <h1 id="welcomeh1" data-en="Welcome" data-sr="Dobrodosli">Welcome</h1>
+        <p
+          id="paragraf1"
+          data-en="Discover more about these warm yet hardy creatures, what makes them so
+        remarkable, and why travelers flock from across the world to visit
+        them in Iceland, their natural habitat."
+          data-sr="Saznajte više o ovim toplim, a ipak otpornim stvorenjima, šta ih čini tako izuzetnim i zašto putnici iz celog sveta hrle da ih posete na Islandu, njihovom prirodnom staništu."
+        >
           Discover more about these warm yet hardy creatures, what makes them so
           remarkable, and why travelers flock from across the world to visit
           them in Iceland, their natural habitat.
         </p>
       </div>
       <i class="fa fa-angle-double-up" aria-hidden="true" id="ikonica"></i>
-      <h1>BREEDING</h1>
-      <p>
+      <h1 id="h11" data-en="BREEDING" data-sr="UZGAJANJE">BREEDING</h1>
+      <p
+        data-en="The Icelandic horse has been bred selectively for a long time, which has
+      improved the breed, especially over the last few decades. The official
+      breeding goal of Icelandic horses is to produce a healthy, fertile, and
+      durable riding horse, a robust and yet elegant and versatile horse with
+      five excellent gaits. The conformation should offer optimal natural
+      balance, and the movements should be supple, high and ground covering in
+      all gaits, giving an elegant and powerful image."
+        data-sr="Islandski konj je selektivno uzgajan već duže vreme, što je poboljšalo rasu, posebno u poslednjim decenijama. Zvanični cilj uzgoja islandskih konja je proizvodnja zdravih, plodnih i izdržljivih konja za jahanje, robusnih, a ipak elegantnih i svestranih konja sa pet odličnih hodova. Konformacija treba da obezbedi optimalnu prirodnu ravnotežu, a pokreti treba da budu elastični, visoki i da pokrivaju puno tla u svim hodovima, dajući elegantan i moćan izgled."
+      >
         The Icelandic horse has been bred selectively for a long time, which has
         improved the breed, especially over the last few decades. The official
         breeding goal of Icelandic horses is to produce a healthy, fertile, and
@@ -66,11 +106,22 @@
         alt=""
       />
 
-      <button id="read"><a href="/breeding/">READ MORE</a></button>
+      <button id="read">
+        <a href="/breeding/" data-en="READ MORE" data-sr="PROCITAJ VISE"
+          >READ MORE</a
+        >
+      </button>
     </div>
     <div class="under2">
-      <h1>GAITS</h1>
-      <p>
+      <h1 id="hod" data-en="GAITS" data-sr="HOD">GAITS</h1>
+      <p
+        data-en=" The Icelandic horse is what is called a gaited breed, they have, unlike
+      other breeds five gaits. Horses usually have three: Walk, Trot, and
+      Gallop. In addition to those gaits, the Icelandic horse has a smooth and
+      desirable gait Tölt and Flying pace. Tölt and Flying pace are the gaits
+      who make the Icelandic horse very special and desirable to ride."
+        data-sr="Islandski konj je takozvana rasa sa hodovima, koja, za razliku od drugih rasa, ima pet hodova. Konji obično imaju tri: hod, trot i galop. Pored tih hodova, islandski konj ima glatki i poželjni hod Tölt i Flying pace. Tölt i Flying pace su hodovi koji čine islandski konj vrlo posebnim i poželjnim za jahanje."
+      >
         The Icelandic horse is what is called a gaited breed, they have, unlike
         other breeds five gaits. Horses usually have three: Walk, Trot, and
         Gallop. In addition to those gaits, the Icelandic horse has a smooth and
@@ -81,11 +132,23 @@
         src="https://images.prismic.io/horsesoficeland/c3d5a3e3-d241-45b2-a93e-6c80a74c7aa7_GFR50673.jpg?auto=compress,format&rect=0,98,2160,1341&w=2160&h=1341"
         alt=""
       />
-      <button id="read2"><a href="/gaits/">READ MORE</a></button>
+      <button id="read2">
+        <a href="/gaits/" data-en="READ MORE" data-sr="PROCITAJ VISE"
+          >READ MORE</a
+        >
+      </button>
     </div>
     <div class="under3">
-      <h1>HISTORY</h1>
-      <p>
+      <h1 id="h3" data-en="HISTORY" data-sr="ISTORIJA">HISTORY</h1>
+      <p
+        id="paragraf3"
+        data-en=" The Icelandic horse is a token of the Icelandic nation, its pride and
+      joy. Our modern day steeds are ancestors of the first Viking horses that
+      arrived with settlers between 860 and 935 CE. This horse has been with
+      us through the mini ice ages, Viking battles, earthquakes, and volcanic
+      eruptions."
+        data-sr="Islandski konj je simbol islandske nacije, njen ponos i radost. Naši savremeni konji su potomci prvih vikingških konja koji su stigli sa naseljenicima između 860. i 935. godine nove ere. Ovaj konj je bio s nama kroz mini ledene dobi, vikingške bitke, zemljotrese i vulkanske erupcije."
+      >
         The Icelandic horse is a token of the Icelandic nation, its pride and
         joy. Our modern day steeds are ancestors of the first Viking horses that
         arrived with settlers between 860 and 935 CE. This horse has been with
@@ -96,7 +159,11 @@
         src="https://static.wixstatic.com/media/df9fb8_7e320fe015744dd8a90d91a5c06cfe69~mv2.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/df9fb8_7e320fe015744dd8a90d91a5c06cfe69~mv2.jpg"
         alt=""
       />
-      <button id="read3"><a href="/history/">READ MORE</a></button>
+      <button id="read3">
+        <a href="/history/" data-en="READ MORE" data-sr="PROCITAJ VISE"
+          >READ MORE</a
+        >
+      </button>
     </div>
     <div class="wrapper">
       <ul class="carousel">
@@ -137,9 +204,25 @@
         </li>
       </ul>
     </div>
-    <h1 class="colors">MANY DIFFERENT COLORS</h1>
+    <h1
+      class="colors"
+      data-en="MANY DIFFERENT COLORS"
+      data-sr="MNOGE RAZLICITE BOJE"
+    >
+      MANY DIFFERENT COLORS
+    </h1>
     <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
     <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span style="margin-bottom: 20px" class="on">SR</span>
+      <span class="off">EN</span>
+    </div>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
     <script>
       function googleTranslateInit() {

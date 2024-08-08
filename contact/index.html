@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
       rel="stylesheet"
@@ -22,29 +25,49 @@
         <h3><a href="/homePage/">Horses of</a></h3>
         <h1><a href="/homePage/">Iceland</a></h1>
         <ul>
-          <li><a href="/homePage/">Home</a></li>
-          <li><a href="/breeding/">Breeding</a></li>
           <li>
-            <a href="/gaits/index.html">Gaits</a>
+            <a data-en="Home" data-sr="Pocetna" href="/homePage/">Home</a>
           </li>
-          <li><a href="/history/">History</a></li>
+          <li>
+            <a href="/breeding/" data-en="Breeding" data-sr="Uzgajanje"
+              >Breeding</a
+            >
+          </li>
+          <li>
+            <a href="/gaits/index.html" data-en="Gaits" data-sr="Hod">Gaits</a>
+          </li>
+          <li>
+            <a href="/history/" data-en="History" data-sr="Istorija">History</a>
+          </li>
           <li>Contact</li>
-          <li><a href="/login/" id="loginremove">Login</a></li>
+          <li>
+            <a href="/login/" id="loginremove" data-en="Login" data-sr="Prijava"
+              >Login</a
+            >
+          </li>
         </ul>
       </header>
       <div class="content">
-        <h1>CONTACT US</h1>
-        <h2>Send us a message</h2>
+        <h1 data-en="CONTACT US" data-sr="KONTAKTIRAJ NAS">CONTACT US</h1>
+        <h2 data-en="Send us a message" data-sr="Posalji nam poruku">
+          Send us a message
+        </h2>
         <form action="">
           <div class="input-container">
             <input
               class="fullname"
-              id="fullName"
+              id="fullname1"
               type="text"
               placeholder="Full name"
               required
             />
-            <span class="floating-label">Full name</span>
+            <span
+              id="fullname"
+              class="floating-label"
+              data-en="Full name"
+              data-sr="Ime"
+              >Full name</span
+            >
           </div>
           <div class="error" id="fullNameError"></div>
           <div class="input-container">
@@ -55,7 +78,13 @@
               placeholder="Your email"
               required
             />
-            <span class="floating-label">Your email</span>
+            <span
+              id="email"
+              class="floating-label"
+              data-en="Your email"
+              data-sr="Vas email"
+              >Your email</span
+            >
           </div>
           <div class="error" id="emailError"></div>
           <div class="input-container">
@@ -65,11 +94,15 @@
               id="message"
               required
             ></textarea>
-            <span class="floating-label1">Message</span>
+            <span class="floating-label1" data-en="Message" data-sr="Poruka"
+              >Message</span
+            >
             <div class="error2" id="messageError"></div>
           </div>
         </form>
-        <button class="btn" id="btn">Submit</button>
+        <button class="btn" id="btn" data-en="Sumbit" data-sr="Potvrdi">
+          Submit
+        </button>
       </div>
     </div>
     <div class="right">
@@ -86,16 +119,16 @@
         <h3>icelandichorses@gmail.com</h3>
       </div>
     </div>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span style="margin-bottom: 20px" class="on">SR</span>
+      <span class="off">EN</span>
+    </div>
     <script src="app.js" defer></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
-    <script>
-      function googleTranslateInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      }
-      googleTranslateInit();
-    </script>
   </body>
 </html>
