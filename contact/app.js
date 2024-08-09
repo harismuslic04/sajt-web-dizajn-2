@@ -3,7 +3,7 @@ document.getElementById("btn").addEventListener("click", () => {
 });
 
 function validateForm() {
-  const fullNameInput = document.getElementById("fullName");
+  const fullNameInput = document.getElementById("fullname1");
   const emailInput = document.getElementById("email");
   const messageInput = document.getElementById("message");
 
