@@ -6,11 +6,9 @@ function validateForm() {
   const fullNameInput = document.getElementById("fullname1");
   const emailInput = document.getElementById("email");
   const messageInput = document.getElementById("message");
-
   const fullName = fullNameInput.value;
   const email = emailInput.value;
   const message = messageInput.value;
-
   const fullNamePattern = /^[a-zA-Z\s]+$/;
   const emailPattern = /^.+@.+\.[a-zA-Z]{2,4}$/;
 
