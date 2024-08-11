@@ -19,7 +19,7 @@ header {
   gap: 3rem;
   position: relative;
   font-size: 1.2rem;
-  left: 21rem;
+  left: 25.3rem;
   top: 0.8rem;
   color: black;
 }
@@ -268,4 +268,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 #breed {
   text-decoration: overline;
+}
+#logo {
+  position: absolute;
+  top: -0.5rem;
+  left: 6.5rem;
+  width: 8rem;
 }
